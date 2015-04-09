@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=.3, maximum-scale=1">
+		<title>Shiren's Skeleton Key</title>
+
+		<link href="style2.css" rel="stylesheet" type="text/css" media="screen" />
+		<script language="javascript" type="text/javascript" src="sskey-min.js"></script>
+	</head>
+
+	<body>
+		<div id="sskey">
+			<h1>Send a rescue request</h1>
+			<form id="myForm" action="#revival" method="post" onsubmit="return shiren.revive();">
+				<fieldset>
+					<label for="rescue">Rescue Password</label>
+					<textarea id="rescue" placeholder="Enter your rescue password" maxlength="80"></textarea>
+				</fieldset>
+				<fieldset>
+					<label for="name">Name</label>
+					<input type="text" id="name" disabled></input>
+				</fieldset>
+				<fieldset>
+					<label for="name">Floor</label>					
+					<input type="text" id="dungeon" disabled></input>
+					<input type="text" id="level" disabled></input>
+				</fieldset>
+				<fieldset>					
+					<input type="submit" value="Revive" />
+				</fieldset>
+
+				<fieldset>
+					<br/>
+					<label for="revival">Revival Spell</label>
+					<textarea id="revival" placeholder="Revival Spell" maxlength="72" disabled>
+					</textarea>
+				</fieldset>
+				<fieldset>
+					<input type="reset"  value="Reset" />
+				</fieldset>
+			</form>			
+		</div>
+	</body>
+</html>
